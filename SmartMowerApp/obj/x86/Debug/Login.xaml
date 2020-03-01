@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="SmartMowerApp.BlankPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartMowerApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="988" Width="988">
+
+    <Grid Margin="0,0,0,-236">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="203*"/>
+            <RowDefinition Height="47*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Center" Height="853" VerticalAlignment="Top" Width="988" Source="/Assets/LoginBackground.png" Margin="0,10,0,0"/>
+        <TextBlock x:ConnectionId='2' Text="Log In" HorizontalAlignment ="Left" TextWrapping="Wrap" Margin="431,300,0,630" Foreground="Yellow" FontWeight="Bold" FontSize="40"                                               RenderTransformOrigin="0.546,-0.496"/>
+        <TextBox Text="" TextWrapping="Wrap" Margin="363,417,363,526" FontSize="20"/>
+        <TextBlock Text="Username" TextWrapping="Wrap" Margin="357,387,473,585" Foreground="Yellow" FontWeight="Bold" FontFamily="MV Boli" FontSize="16"/>
+        <TextBlock TextWrapping="Wrap" Margin="363,484,481,486" Foreground="Yellow" FontWeight="Bold" FontFamily="MV Boli" FontSize="16"><Run Text="Password"/><LineBreak/><Run/></TextBlock>
+        <PasswordBox Margin="372,511,368,432" RenderTransformOrigin="0.496,0.157" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <PasswordBox.RenderTransform>
+                <CompositeTransform SkewX="0.36" TranslateX="-1.104"/>
+            </PasswordBox.RenderTransform>
+        </PasswordBox>
+        <Button x:ConnectionId='3' Content="Log In" Margin="0,584,0,0" VerticalAlignment="Top" Width="183" Height="56"                  HorizontalAlignment="Center"/>
+
+    </Grid>
+</Page>
+
